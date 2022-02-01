@@ -1,0 +1,24 @@
+{
+  "name": "toolbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.8.2",
+    "ascii-table": "^0.0.9",
+    "date-and-time": "^2.0.1",
+    "discord.js": "^13.3.0",
+    "dotenv": "^10.0.0",
+    "emoji-regex": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "mongoose": "^6.0.12",
+    "winston": "^3.3.3"
+  }
+}
