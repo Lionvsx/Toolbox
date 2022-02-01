@@ -20,7 +20,5 @@ const {
 (async () => {
     await registerCommands(client, '../commands');
     await registerEvents(client, '../events');
-    await registerInteractions(client, '../buttons')
-    await registerInteractions(client, '../select-menus')
     await client.login(process.env.DISCORD_BOT_TOKEN);
   })();

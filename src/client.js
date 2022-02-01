@@ -1,5 +1,4 @@
 const { Client, Intents, Options, Interaction, Message, TextChannel } = require('discord.js');
-require('dotenv').config();
 const Logger = require('../utils/services/logger')
 
 
@@ -70,5 +69,5 @@ class client extends Client {
 
 
 }
-const discordClient = new client(process.env.HOMEGUILDID);
+const discordClient = new client();
 module.exports = discordClient;
