@@ -2,6 +2,13 @@ const client = require('./client');
 const {connect} = require('mongoose');
 require('dotenv').config();
 
+const { Configuration, OpenAIApi } = require('openai')
+const configuration = new Configuration({
+    organization: "org-le4yQgH85p1FXwryz6dtWDmx",
+    apiKey: process.env.OPENAI_API_KEY,
+});
+
+
 const { 
     registerCommands, 
     registerEvents,
@@ -21,4 +28,7 @@ const {
     await registerCommands(client, '../commands');
     await registerEvents(client, '../events');
     await client.login(process.env.DISCORD_BOT_TOKEN);
+    const openai = new OpenAIApi(configuration);
+    const response = await openai.listEngines();
+    client.openai = openai;
   })();

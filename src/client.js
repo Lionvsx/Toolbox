@@ -28,6 +28,7 @@ class client extends Client {
         this.commands = new Map();
         this.interactions = new Map();
         this.config = new Map();
+        this.openConversations = new Map();
         this.consoleLogger = new Logger('client');
         this.loadingEmoji = undefined;
     }
